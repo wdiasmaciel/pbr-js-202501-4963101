@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo</title>
+    <style>
+        * {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .cartao {
+            border: 1px solid #b8b6b6;
+            width: 14rem;
+            height: 15rem;
+            padding: 1rem;
+            margin: 2rem auto;
+            box-shadow: .5rem .5rem .3rem .01rem #b8b6b6;
+        }
+
+        img {
+            height: 9rem;
+            width: 14rem;
+        }
+
+        .preco {
+            font-size: 1.5rem;
+            font-weight: bolder;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cartao">
+        <script>
+            /*
+             * Estrutura sequencial.
+             * Comandos de saída.
+             * Declaração de variável.
+             */
+            var produto = prompt("Informe o nome do produto:");
+            var descricao = prompt("Informe a descrição do produto:");
+            var preco = prompt("Informe o preço do produto:");
+
+            document.write("<img src='image.png' alt='Logo de supermercado'>");
+            document.write(`<h1 class="titulo">${produto}</h1>`);
+            document.write(`<article class="descricao"> ${descricao}</article>`);
+            document.write(`<aside class="preco">R$ ${preco}</aside>`);
+        </script>
+    </div>
+</body>
+
+</html>
